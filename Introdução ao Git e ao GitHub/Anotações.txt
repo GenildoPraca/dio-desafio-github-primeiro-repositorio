@@ -1,1 +1,39 @@
 Arquivo de dicas, dúvidas, observações importantes.
+
+#Retorna as configurações do git instalado
+git config --list
+
+#Alterar configurações
+- Primeiro remove (unset)
+  git config --global --unset <propriedade>
+  Ex.:
+    git config --global --unset user.email
+- Realiza a modificação (set)
+  git config --global --set <propriedade> <valor>
+  Ex.:
+    git config --global --unset user.email "abc13232@gmail.com"
+
+#Listar diretórios cadastrados
+git remote -v
+
+#Identificar status alterações
+git status
+
+#Puxar/copiar diretório do git hub para a máquina local
+Abra o git Bash no workspace
+Na janela do terminal execute
+  git clone <caminho do diretório obtido no github HTTPS ou SSH>
+
+? git remote add origin <caminho do diretório obtido no github HTTPS ou SSH>
+
+#Para enviar alterações para o github
+execute o git status e aplique os comandos:
+  git add <file/dir name> para adicionar/confirmar alterações
+  git rm <file/dir name> para remover/descartar alterações
+* isso envia para a stage area
+
+#Quando tudo estiver verde (status) pode ser executado o commit e o push para envio para o servidor remoto
+  Commita as alterações localmente (stage area)
+    git commit -m "<comentário>" 
+  Envia para o git hub
+    git push origin master
