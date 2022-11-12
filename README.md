@@ -13,5 +13,5 @@ Repositório criado para o desafio de projeto DIO sobre Git/Guihub
   > Copia um diretório do GitHub para a máquina local.
 * git add .
   > Adiciona todos os arquivos e diretórios modificados/adicionados ao repositório local (modified)
-* git commit "..."
+* git commit -m "..."
   > Grava as alterações no Github com o comentário definido entre aspas
